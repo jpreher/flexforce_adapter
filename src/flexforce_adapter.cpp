@@ -46,8 +46,8 @@ flexforce::flexforce( ros::NodeHandle nh, int freq,  int timeout ) : rate(freq) 
 
 void flexforce::spinOnce() {
     publish_flexforce();
-    ros::spinOnce();
-    rate.sleep();
+    //ros::spinOnce();
+    //rate.sleep();
 }
 
 void flexforce::publish_flexforce() {
